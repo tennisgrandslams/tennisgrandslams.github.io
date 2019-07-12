@@ -39,7 +39,6 @@ header {
 header h1 {
   margin:  auto;
   padding: 0.5em;
-  width: 50%;
   text-align: center;
   font-size: 2.5em;
 }
@@ -71,11 +70,13 @@ nav {
 }
 
 .container table {
-  margin: auto;
+  width: 100%;
+  max-width: 1080px;
+  margin: 0 auto;
 }
+
 .container h2 {
   margin: auto;
-  width: 60%;
   padding: 1em;
 }
 
@@ -101,17 +102,27 @@ table {
   border-radius: 1em;
   width: 60%;
   background-color: #fff;
+  table-layout: fixed;
+}
+
+td.year {
+  width: 7%;
 }
 
 td {
-  padding: 1em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  padding-left: 1em;
   text-align: center;
   border: 1px solid lightgrey;
   border-collapse: collapse;
 }
+.aus, .fre, .wim, .uso {
+  width: 23.25%;
+}
 
 tr.legend {
-  background-color: #DDD;
+  background-color: #edeef0;
   border-radius: 1em;
 }
 th {
