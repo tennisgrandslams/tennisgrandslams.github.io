@@ -78,6 +78,7 @@ nav {
 .container h2 {
   margin: auto;
   padding: 1em;
+  max-width: 1080px;
 }
 
 .hint {
