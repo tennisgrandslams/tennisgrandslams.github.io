@@ -159,7 +159,7 @@ th.uso { background-color: var(--uso-bg-color); }
   -moz-border-radius: 1em;
   -webkit-border-radius: 1em;
   text-align: center;
-  width: 1.1em; 
+  width: 1.5em; 
   display: inline-block;
   padding: 0.2em;
 }
