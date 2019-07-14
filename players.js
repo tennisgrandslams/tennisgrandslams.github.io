@@ -49,11 +49,15 @@ function deHighlightAll() {
   }
 }
 
-
 window.onmousedown = e => {
   let player = e.target.dataset.player;
   if (player) {
     deHighlightAll();
     highlightPlayerDivs(player);
   }
+}
+
+window.ontouchstart = e => {
+  window.onmousedown(e);
+  e.preventDefault();
 }
