@@ -1,0 +1,177 @@
+:root {
+  box-sizing: border-box;
+}
+
+*,
+::before,
+::after {
+  box-sizing: inherit;
+}
+
+:root {
+  --aus-hd-color: cyan;
+  --fre-hd-color: #B76335;
+  --wim-hd-color: green;
+  --uso-hd-color: blue;
+
+  --aus-bg-color: #ccebff;
+  --fre-bg-color: #fbb450;
+  --wim-bg-color: #88f388;
+  --uso-bg-color: #8cacf3;
+
+}
+
+body {
+  font-family: Georgia,Cambria,"Times New Roman",Times,serif;
+  margin: 0;
+  background-color: #edeef0;
+}
+
+header {
+  color: #fff;
+  background-color: #0277bd;
+}
+
+.cl {
+  clear: both;
+}
+
+header h1 {
+  margin:  auto;
+  padding: 0.5em;
+  text-align: center;
+  font-size: 2.5em;
+}
+
+footer {
+  margin:  auto;
+  padding: 0.5em;
+  text-align: center;
+}
+
+.tb {
+  height: 1em;
+  margin-bottom: -0.2em;
+  margin-right: 0.5em;
+}
+
+nav {
+  float: right;
+  margin-top: -1em;
+}
+
+#main-nav {
+}
+
+#main-nav li {
+  display: inline-block;
+}
+
+#main-nav a {
+  background-color: #BBDE4C;
+  text-decoration: none;
+  padding: 0.3em 1.5em;
+  margin: 0 0.5em;
+  border-radius: 0.5em;
+}
+
+.container table {
+  width: 100%;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+.container h2 {
+  margin: auto;
+  padding: 1em;
+  max-width: 1080px;
+}
+
+.hint {
+  width: 60%;
+  margin: auto;
+/*  background-color: red; */
+  text-align: right;
+  padding-right: 2em;
+  padding-bottom: 1em;
+  font-size: 1em;
+}
+
+span.hint {
+  display: inline;
+  padding: 0.5em;
+  border: solid 1px green;
+  border-radius: 0.5em;
+}
+
+table {
+  border-collapse: collapse;
+  border-radius: 1em;
+  width: 60%;
+  background-color: #fff;
+  table-layout: fixed;
+}
+
+td.year {
+  width: 7%;
+}
+
+td {
+  padding-top: 1em;
+  padding-bottom: 1em;
+  padding-left: 1em;
+  text-align: center;
+  border: 1px solid lightgrey;
+  border-collapse: collapse;
+}
+.aus, .fre, .wim, .uso {
+  width: 23.25%;
+}
+
+tr.legend {
+  background-color: #edeef0;
+  border-radius: 1em;
+}
+th {
+  padding: 1.5em;
+  font-size: 1.1em;
+}
+th.aus { background-color: var(--aus-bg-color); }
+th.fre { background-color: var(--fre-bg-color); }
+th.wim { background-color: var(--wim-bg-color); }
+th.uso { background-color: var(--uso-bg-color); }
+
+.aus.on { background-color: var(--aus-bg-color); transition: background-color 1s ease; }
+.fre.on { background-color: var(--fre-bg-color); transition: background-color 1s ease; }
+.wim.on { background-color: var(--wim-bg-color); transition: background-color 1s ease; }
+.uso.on { background-color: var(--uso-bg-color); transition: background-color 1s ease; }
+
+.total {
+  color: white;
+  font-size: 1.2em;
+  font-weight: bold;
+  text-decoration: underline;
+  margin-right: 1em;
+  visibility: hidden;
+}
+
+.count {
+  font-size: 1.1em;
+  margin-left: 1em;
+  visibility: hidden;
+
+  color: #fff;
+  border-radius: 1em;
+  -moz-border-radius: 1em;
+  -webkit-border-radius: 1em;
+  text-align: center;
+  width: 1.5em; 
+  display: inline-block;
+  padding: 0.2em;
+}
+
+.aus .count { background: #8FC0F6; }
+.wim .count { background: #5EA226; }
+.fre .count { background: #EB8152; }
+.uso .count { background: #5178D0; }
+
